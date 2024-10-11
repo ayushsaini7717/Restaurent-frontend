@@ -147,12 +147,12 @@
         height: 300px;  
     }
 }
-
+/* 
 @media screen and (max-height: 850px){
     .header__app__welcome img{
         height: 400px;
     }
-}
+} */
 
 
 
