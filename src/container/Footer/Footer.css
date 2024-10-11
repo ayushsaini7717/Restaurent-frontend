@@ -1,0 +1,131 @@
+.footer__app{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 7rem;
+}
+.footer__app__top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__app__top h5{
+    color: white;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29.9px;
+    font-family: var(--font-base);
+}
+.footer__app__top h2{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 83.2px;
+}
+.footer__app__top p{
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: var(--font-alt);
+    font-size: 16px;
+    line-height: 28px;
+}
+.footer__app__input{
+    display: flex;
+    gap: 2rem;
+}
+.footer__app__input input{
+    width: 635px;
+    height: 60px;
+    background-color: black;
+    color: #AAAAAA;
+    padding-left: 1rem;
+    border: 1px solid #DCCA87;
+}
+.footer__app__input button{
+    color: black;
+    background-color: var(--color-golden);
+    font-weight: 700;
+    font-family: var(--font-base);
+    font-size: 16px;
+    border: none;
+    padding: 9px 32px;
+}
+.footer__app__grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 10rem;
+    justify-content: center;
+    column-gap: 5rem;
+}
+.footer__app__grid1 h4{
+    color: #F5EFDB;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41.6px;
+}
+.footer__app__grid1 p{
+    color: #AAAAAA;
+    font-family: var(--font-alt);
+}
+
+.footer__app__grid2__para{
+    color: #FFFFFF;
+    font-family: var(--font-alt);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.footer__app__grid3 h4{
+    color: #F5EFDB;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 41.6px;
+    font-family: var(--font-base);
+}
+.footer__app__grid3 p{
+    font-weight: 400;
+    font-family: var(--font-alt);
+    font-size: 16px;
+    line-height: 28px;
+    color: #AAAAAA;
+}
+
+@media screen and (max-width: 800px){
+    .footer__app__grid{
+        grid-template-columns: auto;
+        row-gap: 5rem;
+    }
+    
+
+    .footer__app__input input{
+        width: 335px;
+        margin-top: 1rem;
+    }
+    .footer__app__top h2{
+        font-size: 44px;
+    }
+}
+@media screen and (max-width: 500px){
+    .footer__app__input{
+        flex-direction: column;
+    }
+    .footer__app__grid{
+        width: 300px;
+        margin: auto;
+        margin-top: 7rem;
+        margin-left: 2rem;
+    }
+    .logo img{
+        width: 300px;
+    }
+    .footer__app__top h2{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 361px){
+    .footer__app__top h2{
+        font-size: 22px;
+    }
+}

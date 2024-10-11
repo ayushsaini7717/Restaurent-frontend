@@ -1,0 +1,11 @@
+.intro__app video{
+  /* height: 763px;
+  width: 1920px;
+  object-fit: cover; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.hidden{
+  display: none;
+}

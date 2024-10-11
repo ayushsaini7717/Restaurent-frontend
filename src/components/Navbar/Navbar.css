@@ -1,0 +1,128 @@
+.body{
+    overflow-x: hidden;
+}
+.hidden{
+    display: none;
+}
+.navbar__app{
+    width: 100%;
+    height: 10vh;
+    max-width: 100vw;
+    display: flex;
+    background-color: var(--color-black);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.navbar__app__logo{
+    display: flex;
+    justify-content: flex-start;
+}
+.navbar__app__logo__img{
+    width: 150px;
+}
+.navbar__items{
+    color: var(--color-white);
+}
+
+.navbar__items__list{
+    display: flex;
+    flex: 1;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+.navbar__items__list li{
+    margin: 0 1rem;
+    font-family: var(--font-base);
+}
+.navbar__items__list li:hover{
+    color: var(--color-gray);
+}
+.navbar__app__login{
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navbar__app__login div{
+    width: 1px;
+    height: 30px;
+    background-color: var(--color-golden);
+}
+.navbar__app__login a{
+    margin: 0 1rem;
+    font-family: var(--font-base);
+    cursor: pointer;
+}
+.navbar__app__login a:hover{
+    border-bottom: 1px solid var(--color-golden);
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width: 740px){
+    .navbar__items{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 370px){
+    .navbar__app{
+        padding: 0.5rem;
+    }
+    .navbar__app__logo img{
+        width: 80px;
+    }
+    .navbar__app__login{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width: 740px){
+    .navbar__app__smallscreen{
+        display: none;
+    }
+}
+
+.navbar__app__onclicked{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-black);
+    color: var(--color-golden);
+    font-family: var(--font-base);
+}
+
+.navbar__app__onclicked ul{
+    list-style: none;
+    font-size: 3rem;
+}
+
+.navbar__app__onclicked__list li{
+    margin: 1rem;
+}
+.navbar__app__onclicked__list li:hover{
+    color: white;
+}
+
+.navbar__app__onclicked__icon{
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+@media screen and (max-height: 732px){
+    .navbar__app__login{
+        font-size: small;
+    }
+    .navbar__app__login div{
+        height: 15px;
+    }
+}

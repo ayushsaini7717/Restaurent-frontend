@@ -1,0 +1,180 @@
+.html{
+    overflow-x: hidden;
+}
+.hidden{
+    display: none;
+}
+.chef__app__bg img{
+    height: 1045px;
+}
+.chef__app__bg{
+    position: relative;
+    z-index: 0;
+}
+.chef__app__imgchef{
+    position: absolute;
+    top: 5rem;
+    left: 6rem;
+    display: flex;
+    justify-content: center;
+}
+.chef__app__imgchef img{
+    height: 789px;
+    width: 634px;
+}
+.chef__app__right{
+    position: absolute;
+    top: 10rem;
+    z-index: 7;
+    width: 40rem;
+    right: 0;
+}
+.chef__app__right h4{
+    position: relative;
+    top: 0;
+    right: 0;
+    font-family: var(--font-base);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 29.9px;
+    color: white;
+}
+.chef__app__right img{
+    width: 2rem;
+    height: 3rem;
+}
+.chef__app__believe{
+   color: #DCCA87;
+   font-family: var(--font-base);
+   font-size: 64px;
+   line-height: 83.2px;
+   font-weight: 600;
+   
+}
+.chef__app__para{
+    display: flex;
+    gap: 7px;
+    margin-top: 3rem;
+}
+.chef__app__right h2{
+    font-size: 50px;
+    color: white;
+
+}
+.chef__app__right p{
+    color: #AAAAAA;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: var(--font-alt);
+    text-wrap: wrap;
+}
+.chef__app__name{
+    color: #DCCA87;
+    font-family: var(--font-base);
+    margin-top: 3rem;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 41.6px;
+}
+.chef__app__sign img{
+    margin-top: 2rem;
+    width: 235px;
+    height: 83px;
+    size: 63px;
+}
+@media screen and (max-width: 1396px) {
+    .chef__app__right{
+        left: 50%;
+        transform: translateX(-50%); 
+        bottom: 0;
+        top: 38rem;
+    }
+    .chef__app__imgchef img{
+        height: 500px;
+        width: 450px;
+        margin-top: 5rem;
+        top: 0;
+        /* bottom: 50%; */
+    }
+    .chef__app__imgchef{
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+    }
+    .chef__app__sign img{
+        top: -8rem;
+        right: -26rem;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .chef__app__right h4 {
+        position: relative;
+        left: 91%;
+        transform: translateX(-50%);
+    }
+    .chef__app__right img{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .chef__app__believe{
+        font-size: 45px;
+        position: relative;
+        left: 74%;
+        transform: translateX(-50%);
+    }
+    .chef__app__para{
+        width: 473px;
+        position: relative;
+        left: 50%;
+        top: -2rem;
+        transform: translateX(-50%);
+    }
+    .chef__app__name{
+        position: relative;
+        left: 68%;
+        top: -2rem;
+        transform: translateX(-50%);
+    }
+    .chef__app__founder{
+        position: relative;
+        left: 68%;
+        top: -2rem;
+        transform: translateX(-50%);
+    }
+    .chef__app__sign{
+        position: relative;
+        left: 60%;
+        top: -2rem;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 474px){
+    .chef__app__imgchef img{
+        height: 469px;
+        width: 348px;
+    }
+
+    .chef__app__name,.chef__app__founder,.chef__app__sign{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .chef__app__imgchef img{
+        width: 220px;
+    }
+    .chef__app__believe{
+        font-size: 30px;
+        left: 82%;
+    }
+    .chef__app__para{
+        width: 283px;
+        
+    }
+}

@@ -1,0 +1,132 @@
+.specialmenu__app{
+    background-color: black;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+.hidden{
+    display: none;
+}
+
+.specialmenu__app__header h5{
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 29.9px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-base);
+}
+.specialmenu__app__header div{
+    display: flex;
+    justify-content: center;
+}
+.specialmenu__app__header h1{
+    color: var(--color-golden);
+    font-size: 64px;
+    line-height: 83.2px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-base);
+}
+.specialmenu__app__items{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+.specialmenu__app__items img{
+    margin-top: 2rem;
+    width: 444px;
+    height: 659px;
+}
+.specialmenu__app__items__left h2{
+    color: white;
+    font-family: var(--font-base);
+    font-size: 45px;
+    line-height: 58.8px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+.specialmenu__app__items__left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.specialmenu__app__itemlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+.specialmenu__app__itemlist div{
+    height: 1px;
+    width: 119px;
+    background-color: white;
+}
+.specialmenu__app__title{
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    height: 30px;
+    width: 192px;
+}
+.specialmenu__app__price{
+    color: white;
+    font-family: var(--font-base);
+    height: 30px;
+    width: 37px;
+}
+.specialmenu__app__subheader{
+    color: #AAAAAA;
+    font-family: var(--font-alt);
+}
+
+.specialmenu__app__items__right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.specialmenu__app__items__right h2{
+    color: white;
+    font-family: var(--font-base);
+    font-size: 45px;
+    line-height: 58.8px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+.specialmenu__app__btn button{
+    color: black;
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 32px;
+    background-color: var(--color-golden);
+    border: none;
+    margin: auto;
+}
+.specialmenu__app__btn{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1170px){
+    .specialmenu__app__items{
+        flex-direction: column;
+    }
+    .specialmenu__app__img{
+        margin: auto;
+    }
+    .specialmenu__app__items__right h2{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .specialmenu__app__items img {
+        width: 250px;
+        height: 359px;
+    }
+}

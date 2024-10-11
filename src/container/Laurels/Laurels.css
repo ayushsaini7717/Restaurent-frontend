@@ -1,0 +1,111 @@
+.html{
+    overflow-x: hidden;
+}
+.laurels__app{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.laurels__app__rewards{
+    margin: auto;
+}
+.laurels__app__logo img{
+    width: 146px;
+    height: 146px;
+    padding: 1rem;
+}
+.laurels__app__rewards h4{
+    font-family: var(--font-base);
+    font-weight: 700;
+    color: white;
+    font-size: 23px;
+    line-height: 29.9px;
+}
+.laurels__app__rewards h1{
+    color: var(--color-golden);
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 83.2px;
+    font-family: var(--font-base);
+}
+.laurels__app__right img{
+   height: 691px;
+   width: 555px;
+   margin-right: 4rem;
+}
+
+
+.laurels__app__reward2,.laurels__app__reward1,.laurels__app__reward5,.laurels__app__reward3{
+    display: flex;
+}
+.laurels__app__reward2 img,.laurels__app__reward1 img,.laurels__app__reward5 img,.laurels__app__reward3 img{
+    width: 79px;
+    height: 79px;
+}
+.laurels__app__grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 64px;
+    column-gap: 32px;
+}
+.laurels__app__heading{
+    padding-left: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 190px;
+}
+.laurels__app__heading h5{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-weight: 700;
+    line-height: 29.9px;
+    font-size: 23px;
+}
+.laurels__app__heading p{
+    font-family: var(--font-base);
+    color: #AAAAAA;
+    padding-top: 4px;
+}
+@media screen and (max-width: 1300px) {
+    .laurels__app__grid{
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width: 990px) {
+    .laurels__app__grid{
+        row-gap: 32px;
+        column-gap: 16px;
+    }
+    .laurels__app__right img{
+        width: 480px;
+    }
+}
+@media screen and (max-width: 915px){
+    .laurels__app{
+        flex-direction: column;
+    }
+    .laurels__app__grid{
+        grid-template-columns: auto auto;
+        margin-bottom: 2rem;
+    }
+    .laurels__app__right{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 560px){
+    .laurels__app__grid{
+        grid-template-columns: auto;
+    }
+    .laurels__app__right img{
+        width: 380px;
+        height: 440px;
+    }
+}
+@media screen and (max-width: 395px){
+    .laurels__app__right img{
+        width: 290px;
+    }
+}

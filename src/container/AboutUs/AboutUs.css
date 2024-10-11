@@ -1,0 +1,108 @@
+html{
+    overflow-x: hidden;
+}
+.aboutus__app{
+    background-color: black;
+    display: flex;
+    position: relative;
+    padding-top: 15rem;
+}
+.aboutus__left h1{
+    color: var(--color-golden);
+}
+.aboutus__left p{
+    color: #AAAAAA;
+}
+
+.aboutus__app__g{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.aboutus__knife__img{
+    position: relative;
+    z-index: 4;
+}
+.aboutus__app__g img{
+    width: 391px;
+    height: 415px;
+    z-index: 0;
+}
+.aboutus__left{
+    z-index: 2;
+    width: 100%;
+}
+.aboutus{
+    flex: 1;
+    font-family: var(--font-base);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    flex-direction: column;
+}
+.aboutus h1{
+    font-size: 64px;
+    padding-right: 2rem;
+}
+.aboutus img{
+    padding-right: 2rem;
+}
+.aboutus p{
+    font-size: 16px;
+    font-family: var(--font-alt);
+    line-height: 28px;
+    text-align: left;
+    padding-top: 1rem;
+}
+
+
+.history{
+    flex: 1;
+    font-family: var(--font-base);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    flex-direction: column;
+}
+.history h1{
+    font-size: 64px;
+}
+
+.history p{
+    font-size: 16px;
+    font-family: var(--font-alt);
+    line-height: 28px;
+    text-align: left;
+    align-items: flex-start;
+    padding-top: 1rem;
+}
+
+@media screen and (max-width:560px) {
+    .aboutus__app{
+        flex-direction: column;
+    }
+    .aboutus {
+        align-items: center;
+    }
+    .aboutus__images{
+        display: flex;
+        justify-content: center;
+    }
+    .history{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:483px) {
+    .aboutus__app__g img{
+        width: 300px;
+        height: 415px;
+        z-index: 0;
+    }
+}
