@@ -3,10 +3,13 @@
   width: 1920px;
   object-fit: cover; */
   width: 100%;
-  pointer-events: none;
   height: auto;
   object-fit: cover;
 }
 .hidden{
   display: none;
+}
+
+#myvid{
+  pointer-events: none;
 }
